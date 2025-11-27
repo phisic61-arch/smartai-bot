@@ -4,7 +4,7 @@ from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, Cal
 
 # =========================
 TOKEN = "8504267456:AAFUuKOfl-Xz_NacvnQDDypHAVRxe9A0mw0"
-OPENROUTER_API_KEY = "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"
+OPENROUTER_API_KEY = "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"
 PUB_LINK = "https://www.effectivegatecpm.com/cmss63xi?key=3e8a3ba7448ab5cfaa942be32f0b5b87"
 # =========================
 
@@ -97,4 +97,5 @@ app.add_handler(CallbackQueryHandler(set_language))
 app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, ai_chat))
 
 app.run_polling()
+
 
